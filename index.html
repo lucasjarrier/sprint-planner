@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Planejador de Sprint's</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Planejador de Sprint's</h1>
+    <button class="add-member" onclick="addMemberTable()">Adicionar Membro</button>
+    <div id="memberTables">
+      <div class="member">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Membro 1</th>
+            </tr>
+            <tr>
+              <th>Tarefa</th>
+              <th>Estimativa (horas)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="number" oninput="updateSum()"></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="add-task" onclick="addTask(this)" id="+">Nova Tarefa</button>
+      </div>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
